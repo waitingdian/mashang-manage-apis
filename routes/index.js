@@ -5,9 +5,11 @@ const express = require('express');
 const router = express.Router();
 const user = require('./user');
 const miniprogram = require('./miniprogram');
+const admin = require('./admin');
 
 // 用户相关模块
 router.use('/user', user);
 router.use('/miniprogram', miniprogram);
+router.use('/admin', admin);
 
 module.exports = router;

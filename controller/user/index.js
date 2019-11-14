@@ -14,6 +14,9 @@ class UsersController {
         // const result = await Services.user.addUser(paramas)
         // res.send(result)
     }
+
+    async login(req, res, next) {
+    }
 }
 
 module.exports = new UsersController()

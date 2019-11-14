@@ -4,11 +4,10 @@ var mongoose = require('mongoose'); //引入对象
 // var TodoModel = mongoose.model('user');//引入模型
 var URL = require('url'); //引入URL中间件，获取req中的参数需要
 // const User = mongoose.model('user');
-const User = require('../../services/miniprogram');
-/* GET users listing. */
+const User = require('../../models/miniprogram');
 // 免费试听
 var miniprogramController = require('../../controller/miniprogram')
-// router.post('/audition', miniprogramController.audition);
+router.post('/audition', miniprogramController.audition);
 
 router.post('/audition', function(req, res, next) {
     let errTxt = ''

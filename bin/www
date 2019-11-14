@@ -14,7 +14,7 @@ var http = require('http');
  */
 
 // 设置应用监听的端口
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3009');
 app.set('port', port);
 
 /**
